@@ -29,4 +29,12 @@ public class FirstResources {
 		return "first name is "+name;
 	}
 	
+	@GET
+	@Produces(MediaType.APPLICATION_XML)
+	@Path("/cust")
+	public customers getcustomers(){
+		customers c=new customers("1","rajiv","ranjan");
+		return c;
+	}
+	
 }
